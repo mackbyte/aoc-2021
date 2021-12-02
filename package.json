@@ -4,8 +4,9 @@
   "description": "Advent of Code 2021",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && npx copyfiles -e build day*/input build/",
+    "build": "tsc && npx copyfiles -e build day*/input **/*.template build/",
     "start": "node build/index.js",
+    "generate": "node build/generator/index.js",
     "day": "npm run build && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -3,10 +3,13 @@
 ### Scripts:
 
 #### Build source
-`npm build`
+`npm run build`
 
 #### Run a part 
 `npm start [day] [part]`
 
 #### Build and run a part
 `npm run day [day] [part]`
+
+#### Generate new part source file
+`npm run generate [day] [part]`
