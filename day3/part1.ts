@@ -1,6 +1,6 @@
 import {getInputLines} from "../common/inputUtils";
 
-type Counts = {
+export type Counts = {
     [position: number]: {
         [digit: string]: number,
     }
