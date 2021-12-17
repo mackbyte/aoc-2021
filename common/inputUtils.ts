@@ -7,6 +7,13 @@ function getInputLines(day: number): string[] {
         .filter(value => !!value.trim())
 }
 
+function getInputSplitByBlankLines(day: number): string[] {
+    return readFileSync(resolve(__dirname, `../day${day}/input`), 'utf8')
+        .split("\n\n")
+        .map(value => value.trim())
+}
+
 export {
-    getInputLines
+    getInputLines,
+    getInputSplitByBlankLines
 }
