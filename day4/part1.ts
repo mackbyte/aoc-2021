@@ -5,7 +5,7 @@ type BoardCell = {
     marked: boolean
 }
 
-class Board {
+export class Board {
     private played: number[] = [];
     private readonly cells: BoardCell[][];
     private done: boolean = false;
